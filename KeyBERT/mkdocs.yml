@@ -1,0 +1,44 @@
+site_name: KeyBERT
+extra_css: [style.css]
+repo_url: https://github.com/MaartenGr/keyBERT
+site_url: https://maartengr.github.io/keyBERT/
+site_description: Leveraging BERT to extract important keywords
+site_author: Maarten P. Grootendorst
+use_directory_urls: false
+nav:
+  - Home: index.md
+  - Guides:
+      - Quickstart: guides/quickstart.md
+      - Embedding Models: guides/embeddings.md
+  - API:
+      - KeyBERT: api/keybert.md
+      - MMR: api/mmr.md
+      - MaxSum: api/maxsum.md
+  - FAQ: faq.md
+  - Changelog: changelog.md
+plugins:
+  - mkdocstrings:
+      watch:
+        - keybert
+  - search
+copyright: Copyright &copy; 2021 Maintained by <a href="https://github.com/MaartenGr">Maarten</a>.
+theme:
+  custom_dir: images/
+  name: material
+  icon:
+    logo: material/library
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  favicon: icon.png
+  logo: icon.png
+  feature:
+    tabs: true
+  palette:
+    primary: black
+    accent: blue
+markdown_extensions:
+  - pymdownx.highlight:
+  - pymdownx.superfences:
+  - toc:
+      permalink: true
